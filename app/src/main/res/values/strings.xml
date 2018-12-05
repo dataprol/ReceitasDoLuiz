@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Receitas do Website Panelinha</string>
+    <string name="ListaReceitas">Receitas Disponíveis</string>
+    <string name="ReceitaX">Receita Selecionada</string>
+    <string name="txtCategBolos">Bolos</string>
+    <string name="txtCategBebidas">Bebidas</string>
+    <string name="txtCategLanches">Lanches</string>
+    <string name="txtCarregandoReceita">Carregando receita de</string>
+    <string name="botaoRetornar">Voltar</string>
+</resources>
