@@ -5,19 +5,21 @@ import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.net.URL;
 import java.util.ArrayList;
 
 public class ListaReceitas extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("PROJETO Lista Receitas", "Invocando o onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_receitas);
 
@@ -69,6 +71,52 @@ public class ListaReceitas extends AppCompatActivity {
 
         } );
 
+        // Para retornar à activity antecessora, sem perder dados.
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+    }
+
+    // Para retornar à activity antecessora, sem perder dados.
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
+    protected void onPause() {
+        Log.i("PROJETO Lista Receitas", "Invocando o onPause...");
+        super.onPause();
+    }
+
+    @Override
+    protected void onRestart() {
+        Log.i("PROJETO Lista Receitas", "Invocando o onRestart...");
+        super.onRestart();
+    }
+
+    @Override
+    protected void onStart() {
+        Log.i("PROJETO Lista Receitas", "Invocando o onStart...");
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.i("PROJETO Lista Receitas","Invocando o onStop...");
+        super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.i("PROJETO Lista Receitas", "Invocando o onResume...");
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.i("PROJETO Lista Receitas", "Invocando o onDestroy...");
+        super.onDestroy();
     }
 
 }

@@ -3,6 +3,7 @@ package com.example.treinamento.receitasdoluiz;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -20,6 +21,7 @@ public class Principal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("PROJETO Principal", "Invocando o onCreate");
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_principal );
 
@@ -50,5 +52,40 @@ public class Principal extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onPause() {
+        Log.i("PROJETO Principal", "Invocando o onPause...");
+        super.onPause();
+    }
+
+    @Override
+    protected void onRestart() {
+        Log.i("PROJETO Principal", "Invocando o onRestart...");
+        super.onRestart();
+    }
+
+    @Override
+    protected void onStart() {
+        Log.i("PROJETO Principal", "Invocando o onStart...");
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.i("PROJETO Principal","Invocando o onStop...");
+        super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.i("PROJETO Principal", "Invocando o onResume...");
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.i("PROJETO Principal", "Invocando o onDestroy...");
+        super.onDestroy();
+    }
 
 }

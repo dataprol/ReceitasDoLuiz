@@ -7,4 +7,12 @@
     <string name="txtCategLanches">Lanches</string>
     <string name="txtCarregandoReceita">Carregando receita de</string>
     <string name="botaoRetornar">Voltar</string>
+    <string name="contentImgPanelinha">Imagem de logotipo do websaite de receitas Panelinha</string>
+    <string name="tvPorcao">Porção</string>
+    <string name="tvTempo">Tempo</string>
+    <string name="tvMinutos">Min.</string>
+    <string name="tvNome">Nome</string>
+    <string name="imgvCategoria">Imagem representativa de uma categoria de receita</string>
+    <string name="tvCategoria">Categoria</string>
+    <string name="imgvCateg">Imagem representativa de uma categoria de receita</string>
 </resources>

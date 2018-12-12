@@ -22,7 +22,8 @@
             android:parentActivityName=".Principal" />
         <activity
             android:name=".ModoDePreparo"
-            android:label="@string/ReceitaX" />
+            android:label="@string/ReceitaX"
+            android:parentActivityName=".ListaReceitas" />
     </application>
 
 </manifest>
